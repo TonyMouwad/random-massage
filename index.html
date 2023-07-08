@@ -1,4 +1,4 @@
-<SCRIPT LANGUAGE="JAVASCRIPT">
+<!---<SCRIPT LANGUAGE="JAVASCRIPT">
     
   var r_text = new Array ();
   r_text[0] = "دفعة لطيفة جدا والله اتعرفت فيها علي ناس فخور جدا إني أقول عليهم أخواتي 💖💖";
@@ -75,7 +75,43 @@
               background-repeat: no-repeat;
               background-size: cover;
           }
-       </style>
+       </style>--->
+<!--<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+
+<button>New Message</button>
+</body>
+</html>--->
+
+<html>
+  <head>
+    <script type='text/javascript'>
+        var answerArray = new Array();        
+        answerArray[0] = "I was just thinking about you!";
+        answerArray[1] = "You are a great example for others.";
+        answerArray[2] = "You have great ideas.";
+        answerArray[3] = "When I grow up I want to be you!";
+        answerArray[4] = "I appreciate all of your opinions.";
+
+      function getAnswer() {
+        document.getElementById('answerDiv').innerHTML = 
+          answerArray[Math.floor(Math.random() * answerArray.length)];
+      }
+
+    </script>
+  </head>
+  <body>
+    <input id='questionField' type='text' /><br/>
+    <input type='submit' value='Ask Me!' onclick='getAnswer()' />
+    <div id='answerDiv'></div>
+  </body>
+</html>
 
 
     
